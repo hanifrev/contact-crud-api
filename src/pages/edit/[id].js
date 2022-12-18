@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 
-const edit = ({ data }) => {
+const Edit = ({ data }) => {
   const [name, setName] = useState("");
   const [avatar, setAvatar] = useState("");
   const [address, setAddress] = useState("");
@@ -89,7 +89,7 @@ const edit = ({ data }) => {
   );
 };
 
-export default edit;
+export default Edit;
 
 export async function getServerSideProps(context) {
   const { id } = context.query;

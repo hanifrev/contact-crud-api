@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 
-const index = ({ data }) => {
+const Index = ({ data }) => {
   const [dataUser, setDataUser] = useState(data);
 
   const updatedData = async () => {
@@ -98,7 +98,7 @@ const index = ({ data }) => {
   );
 };
 
-export default index;
+export default Index;
 
 export async function getServerSideProps() {
   const { data } = await axios.get(

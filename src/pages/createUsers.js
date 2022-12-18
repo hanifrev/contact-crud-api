@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import Head from "next/head";
 
-const createUsers = () => {
+const CreateUsers = () => {
   const [name, setName] = useState("");
   const [avatar, setAvatar] = useState("");
   const [address, setAddress] = useState("");
@@ -74,4 +74,4 @@ const createUsers = () => {
   );
 };
 
-export default createUsers;
+export default CreateUsers;
