@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import Head from "next/head";
 
 const createUsers = () => {
   const [name, setName] = useState("");
@@ -24,6 +25,9 @@ const createUsers = () => {
 
   return (
     <div id="createUser">
+      <Head>
+        <title>Create User</title>
+      </Head>
       <div className="bg-sky-300 w-11/12 md:w-4/5 mx-auto rounded-md mt-2">
         <h1 className="font-bold text-xl">ADD NEW USER</h1>
         <form className="flex flex-col gap-2 py-4 pl-10">

@@ -1,7 +1,7 @@
 import axios from "axios";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import dummy from "./dummy.json";
+import Head from "next/head";
 
 const index = ({ data }) => {
   const [dataUser, setDataUser] = useState(data);
@@ -29,6 +29,9 @@ const index = ({ data }) => {
 
   return (
     <div id="home">
+      <Head>
+        <title>Contact CRUD</title>
+      </Head>
       <div className="bg-sky-300 w-11/12 md:w-4/5 mx-auto rounded-md mt-2">
         <div>
           <h2 className="mx-auto text-center font-bold text-3xl">
